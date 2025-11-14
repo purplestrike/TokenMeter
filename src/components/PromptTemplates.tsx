@@ -164,7 +164,7 @@ const templates: PromptTemplate[] = [
                   },
                   display: {
                     size: 15.6,
-                    unit: 'inches',
+                    sizeUnit: 'inches',
                     resolution: {
                       width: 3456,
                       height: 2160
@@ -173,7 +173,7 @@ const templates: PromptTemplate[] = [
                     refreshRate: 60,
                     colorGamut: '100% DCI-P3',
                     brightness: 400,
-                    unit: 'nits'
+                    brightnessUnit: 'nits'
                   },
                   graphics: {
                     integrated: 'Intel Iris Xe',

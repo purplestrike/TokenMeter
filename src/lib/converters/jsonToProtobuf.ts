@@ -9,7 +9,6 @@ export function jsonToProtobuf(jsonObj: any): string {
     // Convert to a compact representation similar to protobuf text format
     // but optimized for minimal token usage
     function toProtobufText(obj: any, indent: number = 0): string {
-      const spaces = ' '.repeat(indent);
       const lines: string[] = [];
       
       if (Array.isArray(obj)) {
