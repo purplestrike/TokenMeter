@@ -7,6 +7,8 @@
 [![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 
+🌐 **Live Application**: [https://token-meter.purplestrike.net/](https://token-meter.purplestrike.net/)
+
 TokenMeter is a powerful, client-side web application that measures and compares token counts across multiple serialization formats. It helps developers and LLM users understand which data formats consume the fewest tokens when sending structured data to Large Language Models, optimizing API costs and improving efficiency.
 
 ## ✨ Features
@@ -53,7 +55,7 @@ TokenMeter is a powerful, client-side web application that measures and compares
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/TokenMeter.git
+   git clone https://github.com/purplestrike/TokenMeter.git
    cd TokenMeter
    ```
 
@@ -164,11 +166,13 @@ jobs:
 git add .
 git commit -m "Initial commit: TokenMeter application"
 git branch -M main
-git remote add origin https://github.com/yourusername/TokenMeter.git
+git remote add origin https://github.com/purplestrike/TokenMeter.git
 git push -u origin main
 ```
 
-The GitHub Action will automatically build and deploy your site to `https://yourusername.github.io/TokenMeter/`
+The GitHub Action will automatically build and deploy your site. For custom domain deployment, configure your domain in your hosting provider's settings.
+
+**Live Site**: [https://token-meter.purplestrike.net/](https://token-meter.purplestrike.net/)
 
 ### Alternative Deployment Options
 
@@ -365,8 +369,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact & Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/TokenMeter/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/TokenMeter/discussions)
+- **Live Application**: [https://token-meter.purplestrike.net/](https://token-meter.purplestrike.net/)
+- **Issues**: [GitHub Issues](https://github.com/purplestrike/TokenMeter/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/purplestrike/TokenMeter/discussions)
 
 ## 🌟 Star History
 

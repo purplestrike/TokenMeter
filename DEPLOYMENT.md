@@ -1,5 +1,7 @@
 # Deployment Guide
 
+🌐 **Live Application**: [https://token-meter.purplestrike.net/](https://token-meter.purplestrike.net/)
+
 ## Quick Start
 
 1. **Install dependencies:**
