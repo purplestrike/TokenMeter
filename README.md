@@ -94,108 +94,6 @@ npm run preview
 pnpm preview
 ```
 
-## 🚢 Deployment
-
-### GitHub Pages (Recommended)
-
-TokenMeter can be easily deployed to GitHub Pages for free hosting.
-
-#### Step 1: Update Vite Configuration
-
-Ensure your `vite.config.ts` includes the base path:
-
-```typescript
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
-export default defineConfig({
-  plugins: [react()],
-  base: '/TokenMeter/', // Replace 'TokenMeter' with your repository name
-  // ... rest of config
-})
-```
-
-#### Step 2: Create GitHub Actions Workflow
-
-Create `.github/workflows/deploy.yml`:
-
-```yaml
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-          
-      - name: Install dependencies
-        run: npm ci
-        
-      - name: Build
-        run: npm run build
-        
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-```
-
-#### Step 3: Enable GitHub Pages
-
-1. Go to your repository on GitHub
-2. Navigate to **Settings** → **Pages**
-3. Under **Source**, select **GitHub Actions**
-4. Save the changes
-
-#### Step 4: Push to GitHub
-
-```bash
-git add .
-git commit -m "Initial commit: TokenMeter application"
-git branch -M main
-git remote add origin https://github.com/purplestrike/TokenMeter.git
-git push -u origin main
-```
-
-The GitHub Action will automatically build and deploy your site. For custom domain deployment, configure your domain in your hosting provider's settings.
-
-**Live Site**: [https://token-meter.purplestrike.net/](https://token-meter.purplestrike.net/)
-
-### Alternative Deployment Options
-
-#### Vercel
-
-1. Install Vercel CLI: `npm i -g vercel`
-2. Run `vercel` in the project directory
-3. Follow the prompts to deploy
-
-#### Netlify
-
-1. Install Netlify CLI: `npm i -g netlify-cli`
-2. Build the project: `npm run build`
-3. Run `netlify deploy --prod --dir=dist`
-
-#### Other Platforms
-
-TokenMeter can be deployed to any static hosting service:
-- **Cloudflare Pages**
-- **AWS S3 + CloudFront**
-- **Azure Static Web Apps**
-- **Firebase Hosting**
-
 ## 🛠️ Tech Stack
 
 ### Core Technologies
@@ -359,13 +257,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **OpenAI** for the tokenizer implementation
-- **Vite** team for the excellent build tool
-- **React** team for the amazing framework
-- All contributors and users of TokenMeter
 
 ## 📧 Contact & Support
 
